@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "strictFunctionTypes": false,
+    "baseUrl": "./",
+    "paths": {
+      "@": ["src"]
+    },
+    "experimentalDecorators": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "strictPropertyInitialization": false,
+    "noUnusedParameters": true,
+    "jsx": "preserve",
+    "jsxFactory": "h"
+  },
+  "include": [
+    "./src/*.ts", "test/unit/specs/index.spec.js"
+  ],
+  "compileOnSave": true
+}
