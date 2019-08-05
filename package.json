@@ -1,11 +1,12 @@
 {
-  "name": "vue-toast-x",
-  "version": "0.0.1",
+  "name": "vue-toast-xs",
+  "version": "0.0.2",
   "main": "/dist/vue-toast-x.js",
   "scripts": {
     "build": "webpack --config build/webpack.build.config.js",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.config.js",
-    "demo-build": "webpack --config build/webpack.demo.build.config.js"
+    "demo-build": "webpack --config build/webpack.demo.build.config.js",
+    "release": "npm run build && npm run demo-build && npm publish"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
