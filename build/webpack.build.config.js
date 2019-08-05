@@ -4,16 +4,21 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const webpackConfig = {
   entry: {
-    main: path.join(__dirname, '../demo/main.js')
+    main: path.join(__dirname, '../src/index.ts')
   },
   output: {
     path: path.join(__dirname, '../dist/'),
-    filename: 'vue-toast-x.js'
+    filename: 'vue-toast-x.js',
+    libraryTarget: 'umd'
   },
   plugins: [
     // 请确保引入这个插件！
     new VueLoaderPlugin()
-  ]
+  ],
+  externals: {
+    vue: 'Vue',
+    'vue-class-component': 'vue-class-component'
+  }
 }
 
 module.exports = Object.assign(webpackBaseConfig, webpackConfig)

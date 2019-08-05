@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="app">
-    welcome!
+    <div @click="$toast.show('Vue Toast X')">welcome!</div>
   </div>
 </template>
 

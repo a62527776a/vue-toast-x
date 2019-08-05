@@ -7,6 +7,7 @@ const webpackConfig = {
   entry: {
     main: path.join(__dirname, '../demo/main.js')
   },
+  watch: true,
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '../public/index.html')

@@ -42,9 +42,5 @@ module.exports = {
         loader: 'pug-plain-loader'
       }
     ]
-  },
-  externals: {
-    vue: 'Vue',
-    'vue-class-component': 'vue-class-component'
   }
 }
