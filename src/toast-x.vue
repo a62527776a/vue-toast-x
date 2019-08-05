@@ -49,21 +49,22 @@ $prime-color: #00B51D;
 .vue-toast-x
   position: fixed;
   min-width: 128px;
-  height: 28px;
+  height: 22px;
   background: $prime-color
   color: white;
-  line-height: 28px;
   text-align: center;
   top: 30px
   transform: translate3D(-50%, 30px, 0);
-  border-radius: 28px;
-  padding: 6px 12px
+  border-radius: 22px;
+  padding: 6px
   left: 50%;
   transition: all 0.3s;
   display: flex;
   justify-content: center;
   align-items: center
-
+  a
+    color: white
+    font-size: 12px;
 .fade-leave-to, .fade-enter
   opacity: 0;
 .fade-enter

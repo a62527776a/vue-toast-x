@@ -1,6 +1,6 @@
 {
   "name": "vue-toast-xs",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "main": "dist/vue-toast-x.js",
   "scripts": {
     "build": "webpack --config build/webpack.build.config.js",
