@@ -3,7 +3,8 @@ div
   transition(
     name="fade"
     @after-leave="transitionend")
-    .vue-toast-x(v-if="show") {{message}}
+    .vue-toast-x(v-if="show")
+      a {{message}}
 </template>
 
 <script lang="ts">
@@ -59,6 +60,9 @@ $prime-color: #00B51D;
   padding: 6px 12px
   left: 50%;
   transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center
 
 .fade-leave-to, .fade-enter
   opacity: 0;

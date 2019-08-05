@@ -16,7 +16,7 @@ const webpackConfig = {
     new VueLoaderPlugin()
   ],
   externals: {
-    vue: 'Vue'
+    vue: 'vue'
   }
 }
 
