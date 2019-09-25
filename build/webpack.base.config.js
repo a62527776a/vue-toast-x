@@ -17,7 +17,8 @@ module.exports = {
       },
       {
         test: /\.js?$/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.sass$/,
@@ -34,8 +35,14 @@ module.exports = {
       },
       {
         test: /\.ts$/,
-        loader: 'ts-loader',
-        options: { appendTsSuffixTo: [/\.vue$/] }
+        exclude: /node_modules/,
+        use: [
+          'babel-loader',
+          {
+            loader: 'ts-loader',
+            options: { appendTsSuffixTo: [/\.vue$/] }
+          }
+        ]
       },
       {
         test: /\.pug$/,

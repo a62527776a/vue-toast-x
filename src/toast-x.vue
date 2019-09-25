@@ -53,7 +53,9 @@ $prime-color: #2196F3;
   background: $prime-color
   color: white;
   text-align: center;
-  top: 30px
+  top: 35px
+  top: calc(constant(safe-area-inset-top) + 35px);
+  top: calc(env(safe-area-inset-top) + 35px);
   transform: translate3D(-50%, 30px, 0);
   border-radius: 22px;
   padding: 6px
